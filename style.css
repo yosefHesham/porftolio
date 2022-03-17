@@ -21,3 +21,18 @@ body {
   align-items: center;
   margin: 0;
 }
+.headline {
+  background-image:url(assets/images/background.svg)
+}
+
+.welcome-message{
+  color: #172B4D;
+  text-align: center;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+}
+.job-title{
+  color:#36B37E
+  
+}
