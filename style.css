@@ -6,17 +6,18 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 10px 12px;
 }
 .hamburger{
-  padding: 8px;
+  padding: 10px 12px;
 }
-.logo-placeholder{
-  align-items: center;
-padding: 10px 12px;
-}
+
 .toolbar-title{
   text-decoration: none;
+}
+.toolbar-title h1{
   color:  #28352F;
   text-align: center;
   align-items: center;
+  margin: 0;
 }
