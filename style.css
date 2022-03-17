@@ -30,6 +30,8 @@ body {
 .headline {
   background-image: url(assets/images/background.svg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome-message {
@@ -51,6 +53,7 @@ body {
   text-align: center;
   color: #172b4d;
 }
+
 
 .social-icons {
   list-style: none;
