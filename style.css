@@ -1,18 +1,17 @@
 body {
   background-color: #FFFFFF;
-  font-family: "Inter";
+  font-family: Inter;
 }
 
 .toolbar-items{
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding: 10px 12px;
-}
-.hamburger{
-  padding: 10px 12px;
 }
 
+.hamburger {
+  padding: 12px 10px;
+}
 .toolbar-title{
   text-decoration: none;
 }
@@ -21,6 +20,8 @@ body {
   text-align: center;
   align-items: center;
   margin: 0;
+  padding: 8px 10px;
+
 }
 .headline {
   background-image:url(assets/images/background.svg)
@@ -33,7 +34,8 @@ body {
   font-style: bold;
   font-size: 40px;
   left: 24px;
-  top: 64px;}
+  top: 64px;
+}
 .welcome-message span{
   color:#36B37E;
   
