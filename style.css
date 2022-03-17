@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
   background-color: white;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .toolbar-items {
@@ -28,6 +29,7 @@ body {
 
 .headline {
   background-image: url(assets/images/background.svg);
+  background-size: cover;
 }
 
 .welcome-message {
@@ -35,8 +37,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  left: 24px;
-  top: 64px;
+  margin-bottom: 58px;
 }
 
 .welcome-message span {
@@ -56,8 +57,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.items {
-  flex: 1;
+  column-gap: 20px;
 }
