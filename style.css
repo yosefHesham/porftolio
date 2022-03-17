@@ -31,17 +31,29 @@ body {
   font-weight: 700;
   font-style: bold;
   font-size: 40px;
-}
-.job-title{
-  color:#36B37E
+  left: 24px;
+  top: 64px;}
+.welcome-message span{
+  color:#36B37E;
   
 }
 .description {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  
   text-align: center;
+  color: #172B4D;
   
-  
-  color: #172B4D;}
+}
+
+
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  flex: 1;
+}
