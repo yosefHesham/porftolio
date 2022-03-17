@@ -1,5 +1,5 @@
 body {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .toolbar-items{
@@ -7,8 +7,16 @@ body {
   list-style: none;
   justify-content: space-between;
 }
+.hamburger{
+  padding: 8px;
+}
+.logo-placeholder{
+  align-items: center;
+padding: 10px 12px;
+}
 .toolbar-title{
   text-decoration: none;
   color:  #28352F;
   text-align: center;
+  align-items: center;
 }
