@@ -12,7 +12,7 @@
 
 ### Setup
 - clone the project via https://github.com/yosefHesham/porftolio
-- thats it, you are good to go :)
+- thats it, you are good to go
 
 ## Authors
 
