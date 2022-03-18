@@ -13,18 +13,16 @@ body {
 
 .hamburger {
   padding: 12px 10px;
+  margin: 0;
 }
 
-.toolbar-title {
-  text-decoration: none;
-}
-
-.toolbar-title h1 {
+.toolbar-title  {
   color: #28352f;
   text-align: center;
   align-items: center;
+  text-decoration: none;
   margin: 0;
-  padding: 8px 10px;
+  padding: 12px 10px;
 }
 
 .headline {
@@ -32,6 +30,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .welcome-message {
@@ -39,7 +38,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 58px;
+  margin-top: 58px;
 }
 
 .welcome-message span {
