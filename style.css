@@ -3,17 +3,23 @@
 body {
   background-color: white;
   font-family: "Inter", sans-serif;
+  margin: 0px 0px;
 }
 
 .toolbar-items {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 10px 12px;
 }
 
 .hamburger {
-  padding: 12px 10px;
-  margin: 0;
+  margin-right: 32px;
+}
+
+.head-toolbar {
+  width: 375px;
+  height: 48px;
 }
 
 .toolbar-title  {
@@ -21,8 +27,11 @@ body {
   text-align: center;
   align-items: center;
   text-decoration: none;
-  margin: 0;
-  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 0px;
+  margin-left: 24px;
+
 }
 
 .headline {
@@ -48,9 +57,11 @@ body {
 .description {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
   text-align: center;
   color: #172b4d;
+  margin-right: 24px;
+  margin-left: 24px;
+
 }
 
 
