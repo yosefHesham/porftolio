@@ -58,3 +58,8 @@ body {
   align-items: center;
   column-gap: 20px;
 }
+
+.work-header {
+  margin: 0 auto;
+  text-align: center;
+}
