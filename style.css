@@ -90,6 +90,7 @@ body {
   border-radius: 8px;
   background-color: #ebf0ee;
   display: flex;
+  margin-bottom: 16px;
   flex-direction: column-reverse;
   border: 1px solid #d0d9d4;;
 }
