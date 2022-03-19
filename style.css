@@ -183,7 +183,19 @@ body {
   border: 1px solid #c1c7d0;
   justify-content: center;
 }
-.project-lang-list {
+.professional-card-list {
   display: flex;
+  padding: 0;
+  column-gap: 8px;
   flex-wrap: wrap;
+  list-style: none;
+}
+
+.professional-list-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #36b373;
 }
