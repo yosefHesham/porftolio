@@ -150,3 +150,17 @@ body {
 .button:focus {
   background-color: #008552;
 }
+
+.aboutme{
+  background-image: url(assets/images/aboutme.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutme h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172B4D;
+  margin-bottom: 0;
+}
