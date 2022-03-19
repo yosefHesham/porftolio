@@ -71,12 +71,18 @@ body {
   font-weight: 700;
   margin-right: 22px;
   margin-left: 26px;
+  margin-bottom: 24px;
+  padding: 0;
 }
+
 .horizontal-line {
   width: 48px;
   height: 4px;
   background: #36b37e;
   border-radius: 24px;
+  margin-bottom: 62px;
+  margin-top: 0;
+
 }
 
 .recent-works {
@@ -88,7 +94,6 @@ body {
   margin-right: auto;
   display: block;
 }
-
 .card {
   width: 327px;
   height: 474px;
@@ -101,6 +106,7 @@ body {
   flex-direction: column-reverse;
   border: 1px solid #d0d9d4;
 }
+
 
 .project-sample {
   height: 222px;
@@ -165,11 +171,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .aboutme h1 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
   margin-bottom: 0;
+}
+
+.aboutme a {
+  margin-bottom: 64px;
 }
 
 .professional-card {
@@ -182,7 +193,7 @@ body {
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
   justify-content: center;
-  margin-top: 64px;
+  margin-bottom: 24px;
 }
 
 .professional-card-title {
@@ -208,3 +219,4 @@ body {
   font-size: 12px;
   color: #36b373;
 }
+
