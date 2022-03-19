@@ -61,7 +61,7 @@ body {
 }
 
 .recent-works {
-  margin: 0 auto;
+  display: grid;
   text-align: center;
 }
 
