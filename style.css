@@ -225,8 +225,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(assets/images/illustration-contact-form.svg) 100% 723.38px
-    no-repeat;
+  background: url(assets/images/illustration-contact-form.svg) 100% 723.38px;
+  background-repeat: no-repeat;
 }
 
 .contact-description {
@@ -236,7 +236,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin-bottom: 0 0 58px;
+  margin-bottom: 58px;
 }
 
 .contact-form {
