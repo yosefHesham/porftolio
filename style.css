@@ -270,8 +270,12 @@ body {
   border-radius: 4px;
   font-size: 15px;
   line-height: 24px;
-  color: #091e42;
   resize: none;
+}
+
+.contact-message::placeholder {
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
 }
 
 .contact-me .button {
