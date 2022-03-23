@@ -352,7 +352,16 @@ body {
 
   .recent-works {
     display: grid;
-    columns: 3;
+    text-align: center;
+    justify-content: center;
+    column-gap: 24px;
+    grid-template-columns:  auto auto auto;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .work-title {
+    grid-column: 1 / 4;
   }
   
 }
