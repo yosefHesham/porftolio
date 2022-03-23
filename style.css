@@ -43,7 +43,6 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 85px;
 }
 
 .welcome-message span {
@@ -312,6 +311,7 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    height: 1000px;
   }
 
   .headline {
