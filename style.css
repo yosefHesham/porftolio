@@ -28,6 +28,8 @@ body {
 
 .headline {
   background-image: url(assets/images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
