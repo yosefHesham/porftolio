@@ -382,6 +382,18 @@ body {
     margin-left: auto;
     text-align: center;
   }
+  .contact-me {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .my-mail {
+    display: none;
+  }
+  .contact-me ul {
+    display: none;
+  }
 
   
 }
