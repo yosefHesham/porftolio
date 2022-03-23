@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700:800&display=swap");
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 0;
 }
 
@@ -22,13 +22,16 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+.nav-list {
+  display: none;
+}
 
 .headline {
   background-image: url(assets/images/background.svg);
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 24px;
   margin-bottom: 64px;
 }
@@ -38,7 +41,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 58px;
+  margin-top: 85px;
 }
 
 .welcome-message span {
@@ -88,6 +91,7 @@ body {
 .disabled-button {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 64px;
   display: block;
 }
 
@@ -286,36 +290,64 @@ body {
 
 /* Styling desktop version starts here */
 @media only screen and (min-width: 1024px) {
-    .mobile-version {
-      display: none;
-    }
-      .head-toolbar {
-        height: 48px;
-        display: flex;
-        justify-content: center;
-        padding: 24px
-      }
-    
-    .nav-list {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      list-style: none;
-      justify-content: center;
-      column-gap: 32px;
-    }
-    
-    .nav-item  a{
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-      color: #344563;
-    }
-}
-
-@media only screen and (max-width:1024px) {
-  .nav-list{
+  .mobile-version {
     display: none;
   }
-   
+  .wrapper {
+    background-image: url(assets/images/header-desktop-background.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1000px;
+  }
+
+  .headline {
+    background-image: none;
+    display: flex;
+  }
+
+  .head-toolbar {
+    height: 48px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list {
+    padding: 0;
+    margin: 26px 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+  }
+  
+
+  .nav-item a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #344563;
+  }
+
+  .welcome-message {
+    color: #172b4d;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 160px;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    line-height: 32px;
+    width: 750px;
+    font-size: 20px;
+  }
+
+  .disabled-button {
+    margin-top: 75px;
+  }
 }
+
