@@ -283,3 +283,10 @@ body {
   font-size: 20px;
   color: #42526e;
 }
+
+/* Styling desktop version starts here */
+@media only screen and (min-width: 768px) {
+    .mobile-version {
+      display: none;
+    }
+}
