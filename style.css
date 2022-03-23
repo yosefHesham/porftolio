@@ -364,15 +364,25 @@ body {
   }
   .section-title {
     grid-column: 1 / 4;
+    text-align: center;
   }
 
   .aboutme {
+    display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: ce;
+    justify-content: center;
+    column-gap: 24px;
   }
   .description {
     grid-column: 1 / 4;
   }
+  .button {
+    grid-column: 1 / 4;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
   
 }
 
