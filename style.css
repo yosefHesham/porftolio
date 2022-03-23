@@ -360,7 +360,15 @@ body {
   .horizontal-line {
     display: none;
   }
-  .work-title {
+  .section-title {
+    grid-column: 1 / 4;
+  }
+
+  .aboutme {
+    grid-template-columns: auto auto auto;
+    justify-content: ce;
+  }
+  .description {
     grid-column: 1 / 4;
   }
   
