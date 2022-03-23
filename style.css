@@ -289,7 +289,7 @@ body {
 }
 
 /* Styling desktop version starts here */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .mobile-version {
     display: none;
   }
@@ -349,5 +349,11 @@ body {
   .disabled-button {
     margin-top: 75px;
   }
+
+  .recent-works {
+    display: grid;
+    columns: 3;
+  }
+  
 }
 
