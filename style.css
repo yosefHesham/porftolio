@@ -285,8 +285,37 @@ body {
 }
 
 /* Styling desktop version starts here */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .mobile-version {
       display: none;
     }
+      .head-toolbar {
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        padding: 24px
+      }
+    
+    .nav-list {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      column-gap: 32px;
+    }
+    
+    .nav-item  a{
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: #344563;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+  .nav-list{
+    display: none;
+  }
+   
 }
