@@ -185,7 +185,7 @@ body {
   display: grid;
 }
 
-.aboutme h2 {
+.section-title {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
