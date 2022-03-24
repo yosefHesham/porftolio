@@ -12,10 +12,16 @@
 
 <body>
   <div class="wrapper">
+
     <header class="head-toolbar">
-      <a class="toolbar-title" href="#"> Welcome </a>
+      <a class="toolbar-title mobile-version"  href="#"> Welcome </a>
       <nav class="navbar">
-        <a href="#"> <img src="assets/images/hamburger.svg" alt="" /> </a>
+        <a href="#" class="mobile-version"> <img src="assets/images/hamburger.svg" alt="" /> </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#works"> Portfolio</a></li>
+          <li class="nav-item"><a href="#about"> About</a></li>
+          <li class="nav-item"><a href="#contact"> Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -27,7 +33,7 @@
       <p class="description">
         I can help you build a product , feature or website Look through some
         of my work and experience! If you like what you see and have a project
-        you need coded, don’t hestiate to contact me.
+        you need coded,<br> don’t hestiate to contact me.
       </p>
       <div class="social">
         <ul class="social-icons">
@@ -49,11 +55,15 @@
             <a href="#"> <img src="assets/images/angellist.svg" alt="" /> </a>
           </li>
         </ul>
+
       </div>
-    </section>
-    <section class="recent-works">
       <img class="disabled-button" src="assets/images/Disabled.svg" alt="" />
-      <h2 class="work-title">My Recent Works</h2>
+
+    </section>
+   </div> 
+
+    <section class="recent-works" id="works">
+      <h2 class="section-title">My Recent Works</h2>
       <hr class="horizontal-line" />
       <article class="card">
         <div class="project-sample">
@@ -155,16 +165,40 @@
           <a href="#" class="button"> See Projects </a>
         </div>
       </article>
+      <article class="card">
+        <div class="project-sample">
+          <h4 class="project-title">Multi-Post Stories Gain+Glory</h4>
+          <ul class="project-lang-list">
+            <li>
+              <p class="lang">Ruby on rails</p>
+            </li>
+            <li>
+              <p class="lang">css</p>
+            </li>
+            <li>
+              <p class="lang">javScript</p>
+            </li>
+            <li>
+              <p class="lang">html</p>
+            </li>
+          </ul>
+          <a href="#" class="button"> See Projects </a>
+        </div>
+      </article>
     </section>
 
-    <section class="aboutme">
-      <h2>About me</h2>
-      <p class="description">
-        I can help you build a product , feature or website Look through some
-        of my work and experience! If you like what you see and have a project
-        you need coded, don’t hestiate to contact me.
-      </p>
-      <a href="#" class="button"> Get My Resume </a>
+    <section class="aboutme" id="about">
+      <div class="about-header">
+        <h2 class="section-title">About me</h2>
+        <p class="description">
+          I can help you build a product,feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded,<br> don’t hestiate to contact me.
+        </p>
+        <a href="#" class="button"> Get My Resume </a>
+
+    </div>
+     <div class="about-content">
       <article class="professional-card">
         <img src="assets/images/icon-languages.svg" alt="" />
         <h3 class="professional-card-title">Languages</h3>
@@ -198,19 +232,45 @@
           <li class="professional-list-item">Terminal</li>
         </ul>
       </article>
+    </div>
     </section>
-  </div>
-  <section class="contact-me">
-    <p class="contact-description">
-      I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-    </p>
-    <form action="https://formspree.io/f/meqnzwlb" method="POST" class="contact-form">
-      <input type="text" name="name" id="name" placeholder="Full name" class="form-field" maxlength="30" required>
-      <input type="email" name="email" id="email" placeholder="Email address" class="form-field" maxlength="30"
-        required>
-      <textarea class="contact-message" maxlength="500" placeholder="Enter text here" required></textarea>
-      <input type="submit" value="Get in touch" id="submit" class="button">
-    </form>
+    <div class="contact-wrapper">
+      <section class="contact-me" id="contact">
+        <p class="contact-description">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </p>
+        <form action="https://formspree.io/f/meqnzwlb" method="POST" class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Full name" class="form-field" maxlength="30" required>
+          <input type="email" name="email" id="email" placeholder="Email address" class="form-field" maxlength="30"
+            required>
+          <textarea class="contact-message" maxlength="500" placeholder="Enter text here" required></textarea>
+          <input type="submit" value="Get in touch" id="submit" class="button">
+        </form>
+        <ul class="social-icons">
+          <li class="items">
+            <a href="#"> <img src="assets/images/twitter.svg" alt="" /></a>
+          </li>
+          <li class="items">
+            <a href="#">
+              <img src="assets/images/Linkedinicon.svg" alt="" />
+            </a>
+          </li>
+          <li class="items">
+            <a href="#"> <img src="assets/images/medium.svg" alt="" /> </a>
+          </li>
+          <li class="items">
+            <a href="#"> <img src="assets/images/github.svg" alt="" /> </a>
+          </li>
+          <li class="items">
+            <a href="#"> <img src="assets/images/angellist.svg" alt="" /> </a>
+          </li>
+        </ul>
+        <p class="my-mail">yousefmobdev@gmail.com</p>
+      </section>
+    </div>
+
+  <footer>
+    <hr>
     <ul class="social-icons">
       <li class="items">
         <a href="#"> <img src="assets/images/twitter.svg" alt="" /></a>
@@ -230,8 +290,7 @@
         <a href="#"> <img src="assets/images/angellist.svg" alt="" /> </a>
       </li>
     </ul>
-    <p class="my-mail">yousefmobdev@gmail.com</p>
-  </section>
+  </footer>
 </body>
 
 </html>

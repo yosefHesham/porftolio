@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700:800&display=swap");
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 0;
 }
 
@@ -23,12 +23,18 @@ body {
   font-size: 20px;
 }
 
+.nav-list {
+  display: none;
+}
+
 .headline {
   background-image: url(assets/images/background.svg);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 24px;
   margin-bottom: 64px;
 }
@@ -38,7 +44,6 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 58px;
 }
 
 .welcome-message span {
@@ -49,6 +54,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+  max-width: 800px;
   color: #172b4d;
 }
 
@@ -64,16 +70,9 @@ body {
 .recent-works {
   display: grid;
   text-align: center;
-}
-
-.work-title {
-  color: #172b4d;
-  font-size: 40px;
-  font-weight: 700;
-  margin-right: 22px;
-  margin-left: 26px;
-  margin-bottom: 24px;
-  padding: 0;
+  margin-bottom: 68px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .horizontal-line {
@@ -88,7 +87,20 @@ body {
 .disabled-button {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 64px;
   display: block;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.recent-works .section-title {
+  margin-bottom: 24px;
 }
 
 .card {
@@ -165,16 +177,17 @@ body {
 .aboutme {
   background-image: url(assets/images/aboutme.svg);
   background-size: cover;
+  margin: 0 auto;
+}
+
+.about-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.aboutme h2 {
-  font-weight: 700;
-  font-size: 40px;
-  color: #172b4d;
-  margin-bottom: 0;
+.about-content {
+  display: grid;
 }
 
 .aboutme a {
@@ -187,6 +200,8 @@ body {
   align-items: center;
   height: 352px;
   width: 327px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
@@ -220,7 +235,6 @@ body {
 }
 
 .contact-me {
-  width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -286,4 +300,195 @@ body {
   margin-bottom: 189px;
   font-size: 20px;
   color: #42526e;
+}
+
+footer {
+  display: none;
+}
+
+/* Styling desktop >= 768px version starts here */
+@media only screen and (min-width: 768px) {
+  .mobile-version {
+    display: none;
+  }
+
+  .wrapper {
+    background-image: url(assets/images/header-desktop-background.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1000px;
+  }
+
+  .headline {
+    background-image: none;
+    display: flex;
+  }
+
+  .head-toolbar {
+    height: 48px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list {
+    padding: 0;
+    margin: 26px 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #344563;
+  }
+
+  .welcome-message {
+    color: #172b4d;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 160px;
+    margin-bottom: 24px;
+  }
+
+  .disabled-button {
+    margin-top: 75px;
+  }
+
+  .recent-works {
+    display: grid;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 192px;
+    grid-template-columns: auto auto;
+  }
+
+  .horizontal-line {
+    display: none;
+  }
+
+  .section-title {
+    grid-column: 1 / 3;
+    text-align: center;
+  }
+
+  .about-content {
+    display: grid;
+    justify-content: center;
+    column-gap: 24px;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+  }
+
+  .aboutme {
+    background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
+    background-position-x: 95%, 1%;
+    background-position-y: top, 20%;
+    background-size: 100%, 15%;
+    background-repeat: no-repeat;
+  }
+
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    background-image: url("assets/images/contact-form1.svg"), url("assets/images/contact-form2.svg"), url("assets/images/contact-form3.svg");
+    background-position-x: 20%, 100%, 0;
+    background-position-y: 80%, bottom, bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 262px;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin-top: 164px;
+    column-gap: 24px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form .button {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .my-mail {
+    display: none;
+  }
+
+  .contact-description {
+    font-size: 30px;
+    flex: 1;
+    margin-bottom: 85px;
+  }
+
+  .contact-me ul {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer hr {
+    color: #dfe1e6;
+    height: 1px;
+  }
+}
+
+/* Styling desktop  >= 1000px version starts here */
+@media only screen and (min-width: 1000px) {
+  .recent-works {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .section-title {
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about-content {
+    grid-template-columns: auto auto auto;
+  }
+
+  .contact-me {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin-top: 164px;
+    column-gap: 24px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  .contact-description {
+    font-size: 30px;
+    flex: 1;
+    margin-bottom: 85px;
+  }
 }
