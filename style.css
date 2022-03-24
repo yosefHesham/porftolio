@@ -22,6 +22,7 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+
 .nav-list {
   display: none;
 }
@@ -299,6 +300,11 @@ body {
   color: #42526e;
 }
 
+
+footer {
+  display: none;
+}
+
 /* Styling desktop >= 768px version starts here */
 @media only screen and (min-width: 768px) {
   .mobile-version {
@@ -416,6 +422,14 @@ body {
   }
   .contact-me ul {
     display: none;
+  }
+
+  footer {
+    margin-top: 265px;
+    display: block;
+  }
+  footer hr {
+   color:#DFE1E6
   }
 }
 
