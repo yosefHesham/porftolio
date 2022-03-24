@@ -236,7 +236,6 @@ body {
 }
 
 .contact-me {
-  width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -302,7 +301,6 @@ body {
 
 /* Styling desktop >= 768px version starts here */
 @media only screen and (min-width: 768px) {
-  
   .mobile-version {
     display: none;
   }
@@ -361,7 +359,7 @@ body {
     justify-content: center;
     column-gap: 24px;
     margin: 0 auto;
-    grid-template-columns:auto auto;
+    grid-template-columns: auto auto;
   }
   .horizontal-line {
     display: none;
@@ -376,35 +374,35 @@ body {
     justify-content: center;
     column-gap: 24px;
     margin: 0 auto;
-    grid-template-columns:auto auto;
+    grid-template-columns: auto auto;
   }
 
-
-.about-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-}
- 
-  .contact-me {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 164px;
-    margin-right: auto;
-    flex-wrap: wrap;
-    margin-left: auto;
-    column-gap: 24px;
-  }
-
-  .contact-form {
-    width: 327px;
+  .about-header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin-top: 164px;
+    
+    column-gap: 24px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    align-items: center;
+  }
   .contact-form .button {
     align-self: flex-start;
-    margin:0;
+    margin: 0;
   }
 
   .my-mail {
@@ -413,7 +411,8 @@ body {
 
   .contact-description {
     font-size: 30px;
-    flex:1
+    flex: 1;
+    margin-bottom: 85px;
   }
   .contact-me ul {
     display: none;
@@ -422,10 +421,9 @@ body {
 
 /* Styling desktop  >= 1000px version starts here */
 @media only screen and (min-width: 1000px) {
-
   .recent-works {
     display: grid;
-    grid-template-columns:auto auto auto ;
+    grid-template-columns: auto auto auto;
   }
 
   .section-title {
@@ -433,8 +431,27 @@ body {
     text-align: center;
   }
   .about-content {
-   
-    grid-template-columns:auto auto auto;
+    grid-template-columns: auto auto auto;
+  }
+
+  .contact-me {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin-top: 164px;
+  
+    column-gap: 24px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  .contact-description {
+    font-size: 30px;
+    flex: 1;
+    margin-bottom: 85px;
   }
 
 }
