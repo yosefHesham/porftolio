@@ -65,16 +65,6 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
-  animation: list-opacity 3s 1s;
-}
-
-@keyframes list-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .recent-works {
@@ -174,12 +164,10 @@ body {
   font-weight: 500;
   color: white;
   text-decoration: none;
-  transition: transform 1s;
 }
 
 .button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  transform: scale(1.1);
 }
 
 .button:focus {
@@ -395,10 +383,20 @@ footer {
     grid-template-columns: auto auto;
   }
 
+  .aboutme {
+    background-image: none;
+  }
+
   .about-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
+    background-position-x: 95%,1%;
+    background-position-y:100%, 50%;
+    background-size: 100%, 15%;
+    background-repeat: no-repeat;
+    padding: 20px;
   }
 
   .contact-me {
