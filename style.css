@@ -384,18 +384,19 @@ footer {
   }
 
   .aboutme {
-    background-image: none;
+    background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
+    background-position-x: 95%,1%;
+    background-position-y: top, 20%;
+    background-size: 100%, 15%;
+    background-repeat: no-repeat;  
+  
   }
 
   .about-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
-    background-position-x: 95%,1%;
-    background-position-y:100%, 50%;
-    background-size: 100%, 15%;
-    background-repeat: no-repeat;
+   
     padding: 20px;
   }
 
@@ -406,6 +407,7 @@ footer {
     max-width: 800px;
     margin-top: 164px;
     column-gap: 24px;
+    background-image: url("assets/images/contact-form1.svg"),url("assets/images/contact-form2.svg"),url("assets/images/contact-form3.svg");
   }
 
   .contact-form {
@@ -467,6 +469,8 @@ footer {
     max-width: 1000px;
     margin-top: 164px;
     column-gap: 24px;
+    background-image: url("assets/images/contact-form1.svg"),url("assets/images/contact-form2.svg"),url("assets/images/contact-form3.svg");
+
   }
 
   .contact-form {
