@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700:800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700:800&display=swap");
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 0;
 }
 
@@ -385,11 +385,10 @@ footer {
 
   .aboutme {
     background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
-    background-position-x: 95%,1%;
+    background-position-x: 95%, 1%;
     background-position-y: top, 20%;
     background-size: 100%, 15%;
-    background-repeat: no-repeat;  
-  
+    background-repeat: no-repeat;
   }
 
   .about-header {
@@ -399,11 +398,10 @@ footer {
     padding: 20px;
   }
 
-
   .contact-wrapper {
     width: 100%;
-    background-image: url("assets/images/contact-form1.svg"),url("assets/images/contact-form2.svg"),url("assets/images/contact-form3.svg");
-    background-position-x:20%, 100%, 0px;
+    background-image: url("assets/images/contact-form1.svg"), url("assets/images/contact-form2.svg"), url("assets/images/contact-form3.svg");
+    background-position-x: 20%, 100%, 0;
     background-position-y: 80%, bottom, bottom;
     background-repeat: no-repeat;
     padding-bottom: 262px;
@@ -476,10 +474,7 @@ footer {
     max-width: 1000px;
     margin-top: 164px;
     column-gap: 24px;
-  
-
   }
-
 
   .contact-form {
     display: flex;
