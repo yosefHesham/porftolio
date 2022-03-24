@@ -300,7 +300,6 @@ body {
   color: #42526e;
 }
 
-
 footer {
   display: none;
 }
@@ -395,7 +394,7 @@ footer {
     justify-content: space-evenly;
     max-width: 800px;
     margin-top: 164px;
-    
+
     column-gap: 24px;
   }
 
@@ -429,7 +428,8 @@ footer {
     display: block;
   }
   footer hr {
-   color:#DFE1E6
+    color: #dfe1e6;
+    height: 1px;
   }
 }
 
@@ -453,7 +453,7 @@ footer {
     justify-content: center;
     max-width: 1000px;
     margin-top: 164px;
-  
+
     column-gap: 24px;
   }
 
@@ -467,5 +467,4 @@ footer {
     flex: 1;
     margin-bottom: 85px;
   }
-
 }
