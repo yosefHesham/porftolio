@@ -9,10 +9,6 @@
 
 - Html, css
 
-## Live Demo
---
-[yousefHesham/Portfolio](https://yosefhesham.github.io/porftolio/)
-
 
 ### Setup
 - clone the project via https://github.com/yosefHesham/porftolio
