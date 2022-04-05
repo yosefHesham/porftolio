@@ -7,7 +7,7 @@
 
 ## Built With
 
-- Html, css
+- Html, css and JavaScript
 
 ## Live Demo
 --
@@ -22,8 +22,14 @@
 ## Authors
 
 👤 **Yousef Hesham**
-
 - GitHub: [@yousefHesham](https://github.com/yosefHesham)
+
+👤 **Anthony Mwenyo**
+- GitHub: [@mwenyoa](https://github.com/mweenyoa)
+
+👤 **Joseph Kwesi Kwentsir**
+- GitHub: [@kwentsir](https://github.com/kwentsir)
+
 
 ## 🤝 Contributing
 
