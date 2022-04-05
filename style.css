@@ -30,6 +30,7 @@ body {
 .nav-list {
   display: none;
 }
+
 .mob-nav-list {
   display: none;
   list-style: none;
@@ -39,8 +40,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 10px;
-  padding-left: 5px;
+  padding-top: 55px;
+  padding-left: 28px;
   bottom: 0;
   background-color: white; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
@@ -51,7 +52,8 @@ body {
   margin-bottom: 28px;
 }
 
-.nav-list a, .mob-nav-list a {
+.nav-list a,
+.mob-nav-list a {
   text-decoration: none;
   color: #3a4a42;
   font-size: 32px;
@@ -62,6 +64,7 @@ body {
   display: none;
   z-index: 2;
 }
+
 .headline {
   background-image: url(assets/images/background.svg);
   background-repeat: no-repeat;
@@ -377,7 +380,6 @@ footer {
     column-gap: 32px;
   }
 
-
   .nav-item a {
     text-decoration: none;
     font-size: 15px;
@@ -424,7 +426,8 @@ footer {
   }
 
   .aboutme {
-    background-image: url("assets/images/aboutme-desktop.svg"),
+    background-image:
+      url("assets/images/aboutme-desktop.svg"),
       url("assets/images/about-me-2-desktop.svg");
     background-position-x: 95%, 1%;
     background-position-y: top, 20%;
@@ -441,7 +444,8 @@ footer {
 
   .contact-wrapper {
     width: 100%;
-    background-image: url("assets/images/contact-form1.svg"),
+    background-image:
+      url("assets/images/contact-form1.svg"),
       url("assets/images/contact-form2.svg"),
       url("assets/images/contact-form3.svg");
     background-position-x: 20%, 100%, 0;
@@ -497,7 +501,6 @@ footer {
 
 /* Styling desktop  >= 1000px version starts here */
 @media only screen and (min-width: 1000px) {
- 
   .recent-works {
     display: grid;
     grid-template-columns: auto auto auto;
