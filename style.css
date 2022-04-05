@@ -27,6 +27,9 @@ body {
   display: none;
 }
 
+.close-button {
+display: none;
+}
 .headline {
   background-image: url(assets/images/background.svg);
   background-repeat: no-repeat;
