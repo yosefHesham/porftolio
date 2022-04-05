@@ -14,6 +14,10 @@ body {
   padding: 10px 24px;
 }
 
+.navbar {
+  display: flex;
+}
+
 .toolbar-title {
   color: #28352f;
   text-align: center;
@@ -25,6 +29,11 @@ body {
 
 .nav-list {
   display: none;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
 }
 
 .close-button {
