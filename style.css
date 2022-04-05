@@ -30,14 +30,35 @@ body {
 .nav-list {
   display: none;
   list-style: none;
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 32px;
+  padding-left: 28px;
+  bottom: 0;
+  background-color: white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
 .nav-list a {
   text-decoration: none;
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+
+}
+.nav-list li {
+  text-decoration: none;
+  margin-bottom: 40px;
 }
 
 .close-button {
-display: none;
+  display: none;
+  z-index: 2;
 }
 .headline {
   background-image: url(assets/images/background.svg);
@@ -301,7 +322,7 @@ display: none;
 
 .contact-message::placeholder {
   color: #091e42;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .contact-me .button {
@@ -400,7 +421,8 @@ footer {
   }
 
   .aboutme {
-    background-image: url("assets/images/aboutme-desktop.svg"), url("assets/images/about-me-2-desktop.svg");
+    background-image: url("assets/images/aboutme-desktop.svg"),
+      url("assets/images/about-me-2-desktop.svg");
     background-position-x: 95%, 1%;
     background-position-y: top, 20%;
     background-size: 100%, 15%;
@@ -416,7 +438,9 @@ footer {
 
   .contact-wrapper {
     width: 100%;
-    background-image: url("assets/images/contact-form1.svg"), url("assets/images/contact-form2.svg"), url("assets/images/contact-form3.svg");
+    background-image: url("assets/images/contact-form1.svg"),
+      url("assets/images/contact-form2.svg"),
+      url("assets/images/contact-form3.svg");
     background-position-x: 20%, 100%, 0;
     background-position-y: 80%, bottom, bottom;
     background-repeat: no-repeat;
