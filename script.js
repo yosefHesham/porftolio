@@ -26,7 +26,7 @@ navItems.forEach((e) => {
 const projects = [
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -35,14 +35,14 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -51,14 +51,14 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -67,14 +67,14 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -83,14 +83,14 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -99,14 +99,14 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
     name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails, css, Javascript ,html"],
+    technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
       "Github",
@@ -115,9 +115,49 @@ const projects = [
       "Terminal",
       "Codepen",
     ],
-    mobilePopupTech: ["Ruby on rails,  css,javascript"],
+    mobilePopupTech: ["Ruby on rails",  "css","javascript"],
     title: "Keeping track of hundreds of components",
     popUpImageDesktop: "assets/images/snapshot-desktop.png",
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
 ];
+
+function getElement(className) {
+  return document.querySelector(className);
+}
+
+function createTechList(technologies) {
+  let langList = document.createElement("ul")
+  langList.classList.add("project-lang-list");
+  for(var i = 0; i < technologies.length; i ++) {
+    let element = document.createElement("li");
+    element.classList.add("lang")
+    element.innerHTML = technologies[i];
+    langList.appendChild(element);
+  }
+return langList.innerHTML
+}
+
+function createWorksSection() {
+  for (var i = 0; i < projects.length; i++) {
+    var project = projects[i];
+    const technologies = project.technologies;
+    var listItems = [];
+    for(var x = 0; x < technologies.length;  x++) {
+      listItems.push(`<li class="lang">${technologies[x]}</li>`)
+    }
+    var workTemplate = document.createElement("template");
+    workTemplate.innerHTML = `<article class="card">
+    <div class="project-sample">
+      <h4 class="project-title">${project.name}</h4>
+      <ul class="project-lang-list">
+      ${createTechList(technologies)}
+      </ul>
+       <a href="/popup.html" class="button"> See Projects </a>
+     </div>
+   </article>`;
+    getElement(".recent-works").appendChild(workTemplate.content.firstChild);
+  }
+}
+
+window.onload = createWorksSection();
