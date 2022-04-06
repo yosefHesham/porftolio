@@ -1,0 +1,50 @@
+.popup {
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+h3 {
+  font-size: 32px;
+  color: #172b4d;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px !important;
+  padding: 0px;
+}
+ul {
+  margin-top: 12px !important ;
+  margin-bottom: 12px !important;
+  padding: 0;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  padding: 12px 16px ;
+  column-gap: 12px;
+}
+.popup-button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: #36B37F;
+  border-radius: 4px;
+}
+.popup-button p {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
