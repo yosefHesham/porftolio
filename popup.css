@@ -66,6 +66,7 @@ ul {
     width: 920px;
     height: 1083px;
     margin: 0 auto;
+   padding: 24px;
   }
   .cancel-icon {
     display: block;
@@ -95,18 +96,22 @@ ul {
   .desktop-buttons {
     display: flex;
     justify-content: space-between;
-    width: 400px;
     height: 48px;
     column-gap: 12px;
     margin: 0;
   }
   .popup-button {
     border-radius: 8px;
+    column-gap: 12px;
   }
   h3 {
     margin: 0;
     width: 500px;
     font-weight: 700;
     list-style: 44px;
+  }
+  .project-description {
+    line-height: 30px;
+    margin: 12px 0;
   }
 }
