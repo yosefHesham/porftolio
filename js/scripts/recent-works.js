@@ -1,29 +1,13 @@
+ 
 const hamburger = document.querySelector("#mob-menu");
 const navBar = document.querySelector(".mob-nav-list");
 const closeBtn = document.querySelector(".close-button");
 const navItems = document.querySelectorAll(".nav-item");
 let isNavVisible = false;
 
-function onClick() {
-  if (isNavVisible) {
-    navBar.style.display = "none";
-    hamburger.style.display = "block";
-    closeBtn.style.display = "none";
-    isNavVisible = false;
-  } else {
-    navBar.style.display = "block";
-    hamburger.style.display = "none";
-    closeBtn.style.display = "block";
-    isNavVisible = true;
-  }
-}
-hamburger.addEventListener("click", onClick);
-closeBtn.addEventListener("click", onClick);
-navItems.forEach((e) => {
-  e.addEventListener("click", onClick);
-});
 
-const projects = [
+
+var projects = [
   {
     id:"1",
     name: "Multi-Post Stories Gain+Glory",
@@ -128,6 +112,25 @@ const projects = [
   },
 ];
 
+function onClick() {
+  if (isNavVisible) {
+    navBar.style.display = "none";
+    hamburger.style.display = "block";
+    closeBtn.style.display = "none";
+    isNavVisible = false;
+  } else {
+    navBar.style.display = "block";
+    hamburger.style.display = "none";
+    closeBtn.style.display = "block";
+    isNavVisible = true;
+  }
+}
+hamburger.addEventListener("click", onClick);
+closeBtn.addEventListener("click", onClick);
+navItems.forEach((e) => {
+  e.addEventListener("click", onClick);
+});
+
 function getElement(className) {
   return document.querySelector(className);
 }
@@ -145,7 +148,7 @@ return langList.innerHTML
 }
 
 function createWorksSection() {
-  for (var i = 0; i < projects.length; i++) {
+  for (var i = 0; i < window.projects.length; i++) {
     var project = projects[i];
     const technologies = project.technologies;
     var listItems = [];
