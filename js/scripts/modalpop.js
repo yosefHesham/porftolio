@@ -25,6 +25,7 @@ function openModal() {
 
 
 openModalButton.forEach((e) => e.addEventListener('click',openModal))
+
 modalPop.addEventListener('click',function(e) {
   if(!e.target.classList.contains("popup")) {
     openModal()
