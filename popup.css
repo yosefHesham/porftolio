@@ -72,6 +72,7 @@ ul {
 .buttons {
   display: flex;
   column-gap: 12px;
+  margin-top: 16px;
 }
 .popup-button {
   display: flex;
