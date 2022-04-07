@@ -1,0 +1,179 @@
+.popup-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #dfe1e6;
+  padding: 16px;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 4% 4%;
+  padding: 20px;
+  width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.desktop-list-item {
+  color: #172b4d !important;
+  display: none;
+}
+
+.cancel-with-image {
+  position: relative;
+}
+
+.mobile-snap {
+  width: 100%;
+  display: block;
+}
+
+.cancel-icon {
+  position: absolute;
+  width: 10%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.desktop-snap {
+  display: none;
+}
+
+.project-title-popup {
+  font-size: 32px;
+  color: #172b4d;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px !important;
+  padding: 0;
+}
+
+ul {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+  padding: 0;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 16px;
+}
+
+.popup-button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.desktop-hint {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-buttons {
+  display: none;
+}
+
+.popup-button p {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    width: 920px;
+    height: 1083px;
+    margin: 5% auto;
+    padding: 24px;
+  }
+
+  .mobile-snap {
+    display: none;
+  }
+
+  .desktop-snap {
+    display: block;
+  }
+
+  .cancel-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: initial;
+    margin-right: 14px;
+    margin-left: auto;
+    margin-bottom: 14px;
+  }
+
+  .mob-list-item {
+    display: none;
+  }
+
+  .desktop-list-item {
+    display: block;
+  }
+
+  .desktop-list-item p {
+    color: #344563;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .desktop-hint {
+    margin-top: 24px;
+    justify-content: space-between;
+  }
+
+  .desktop-buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    column-gap: 12px;
+    margin: 0;
+  }
+
+  .popup-button {
+    border-radius: 8px;
+    column-gap: 12px;
+  }
+
+  .project-title-popup {
+    margin: 0;
+    width: 500px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .project-description {
+    line-height: 30px;
+    margin: 12px 0;
+  }
+}
