@@ -1,7 +1,6 @@
 var isModalShown = false;
 let openModalButton = document.querySelectorAll(".open-modal")
 let modalPop = document.querySelector(".popup-wrapper")
-let body = document.querySelector("body")
 
 
 
@@ -26,5 +25,9 @@ function openModal() {
 
 
 openModalButton.forEach((e) => e.addEventListener('click',openModal))
-body.addEventListener('click',openModal)
+modalPop.addEventListener('click',function(e) {
+  if(!e.target.classList.contains("popup")) {
+    openModal()
+;  }
+}, )
 
