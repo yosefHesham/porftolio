@@ -39,6 +39,7 @@
   width: 10%;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 }
 
 .desktop-snap {
@@ -93,6 +94,7 @@ ul {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .desktop-list-item {
