@@ -1,4 +1,5 @@
-import {projects} from '../projects_data.js'
+import projects from '../projects_data.js';
+
 const hamburger = document.querySelector('#mob-menu');
 const navBar = document.querySelector('.mob-nav-list');
 const closeBtn = document.querySelector('.close-button');

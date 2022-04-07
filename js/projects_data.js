@@ -1,5 +1,4 @@
-
-export const projects = [
+const projects = [
   {
     id: '1',
     name: 'Multi-Post Stories Gain+Glory I Love you !',
@@ -103,3 +102,5 @@ export const projects = [
     popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
 ];
+
+export default projects;

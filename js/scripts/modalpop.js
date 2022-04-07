@@ -1,4 +1,5 @@
-import {projects} from '../projects_data.js'
+import projects from '../projects_data.js';
+
 const openModalButton = document.querySelectorAll('.open-modal');
 const modalPop = document.querySelector('.popup-wrapper');
 // const projects = [
