@@ -112,6 +112,7 @@ ul {
     display: block;
     width: 40px;
     height: 40px;
+    position: initial;
     margin-right: 14px;
     margin-left: auto;
     margin-bottom: 14px;
@@ -154,7 +155,5 @@ ul {
     line-height: 30px;
     margin: 12px 0;
   }
-  .cancel-with-image {
-    all: unset;
-  }
+  
 }

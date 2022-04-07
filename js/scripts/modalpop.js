@@ -128,7 +128,7 @@ function openModal(e) {
   const project = projects.find((e) => e.id === projectId);
   let temp = document.createElement("template");
 
-  temp.innerHTML = `<section class="modal-content"
+  temp.innerHTML = `<section class="modal-content">
   <div class="cancel-with-image">
 <img  class="cancel-icon"src="assets/images/close-desktop.png" alt="close-icon">
 <img class="mobile-snap" src=${project.popUpImageMobile} alt="snapshoot" />
