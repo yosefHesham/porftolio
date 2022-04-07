@@ -1,7 +1,7 @@
 const openModalButton = document.querySelectorAll('.open-modal');
 const modalPop = document.querySelector('.popup-wrapper');
 
-const prjcts = window.projects
+const prjcts = window.projects;
 
 function createTechList(technologies, className) {
   const langList = document.createElement('ul');
@@ -18,7 +18,7 @@ function createTechList(technologies, className) {
 function openModal(e) {
   modalPop.style.display = 'block';
   const projectId = e.target.getAttribute('data');
-  const project = projects.find((e) => e.id === projectId);
+  const project = prjcts.find((e) => e.id === projectId);
   const temp = document.createElement('template');
 
   temp.innerHTML = `<section class="modal-content">
