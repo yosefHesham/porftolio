@@ -153,7 +153,7 @@ function createWorksSection() {
       <ul class="project-lang-list">
       ${createTechList(technologies)}
       </ul>
-       <a href="/popup.html" class="button"> See Projects </a>
+       <a href="/popup.html" class="button open-modal"> See Projects </a>
      </div>
    </article>`;
     getElement(".recent-works").appendChild(workTemplate.content.firstChild);

@@ -1,0 +1,1 @@
+var openModal = document.querySelector(".open-modal")

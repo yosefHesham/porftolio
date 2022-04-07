@@ -1,11 +1,18 @@
 .popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   padding: 16px;
 }
-h3 {
+.project-title-popup {
   font-size: 32px;
   color: #172b4d;
   font-weight: 600;
@@ -104,7 +111,7 @@ ul {
     border-radius: 8px;
     column-gap: 12px;
   }
-  h3 {
+  .project-title-popup {
     margin: 0;
     width: 500px;
     font-weight: 700;
