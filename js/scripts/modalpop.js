@@ -1,6 +1,7 @@
 var isModalShown = false;
 let openModalButton = document.querySelectorAll(".open-modal")
 let modalPop = document.querySelector(".popup-wrapper")
+let cancelIcon = document.querySelector(".cancel-icon")
 
 
 
@@ -110,31 +111,26 @@ var projects = [
 ];
 
 
-function closeModal () {
-  if(isModalShown) {
-    modalPop.style.display = "none";
-    isModalShown = false
-  }
-}
 
 function openModal() {
-  if(isModalShown) {
-    modalPop.style.display = "none";
-    isModalShown = false;
-  }
-  else {
+  console.log(isModalShown);
     modalPop.style.display = "block";
     isModalShown = true;
-  }
 }
+function closeModal () {
+    modalPop.style.display = "none";
+    isModalShown = false
+}
+
 
 
 
 openModalButton.forEach((e) => e.addEventListener('click',openModal))
 
+cancelIcon.addEventListener('click',closeModal)
 modalPop.addEventListener('click',function(e) {
   if(e.target.classList.contains("popup-wrapper")) {
-    openModal()
+    closeModal()
 ;  }
 }, )
 
