@@ -22,8 +22,20 @@
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+.cancel-with-image {
+  position: relative;
+}
 .mobile-snap {
   width: 100%;
+  display: block;
+}
+
+.cancel-icon {
+  position: absolute;
+  width: 10%;
+  top: 10px;
+  right: 10px;
 }
 
 .desktop-snap {
@@ -79,9 +91,7 @@ ul {
   font-size: 17px;
   line-height: 24px;
 }
-.cancel-icon {
-  display: none;
-}
+
 .desktop-list-item {
   display: none;
 }
