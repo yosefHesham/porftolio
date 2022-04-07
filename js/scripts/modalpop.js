@@ -125,7 +125,6 @@ function openModal(e) {
   modalPop.style.display = "block";
   isModalShown = true;
   const projectId = e.target.getAttribute("data");
-  console.log(projectId);
   const project = projects.find((e) => e.id === projectId);
   let temp = document.createElement("template");
 
@@ -164,7 +163,7 @@ ${createTechList(project.desktopPopupTech, ["desktop-list-item", "lang"])}
     <p>See Source</p>
     <img src="assets/images/github.png" alt="">
   </div></section>`;
-  document.querySelector(".popup-wrapper").appendChild(temp.content);
+  modalPop.innerHTML = temp.innerHTML
 }
 function closeModal() {
   modalPop.style.display = "none";
