@@ -25,6 +25,7 @@ navItems.forEach((e) => {
 
 const projects = [
   {
+    id:"1",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -41,6 +42,7 @@ const projects = [
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
+    id:"2",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -57,6 +59,7 @@ const projects = [
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
+    id:"3",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -73,6 +76,7 @@ const projects = [
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
+    id:"4",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -89,6 +93,7 @@ const projects = [
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
+    id:"5",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -105,6 +110,7 @@ const projects = [
     popUpImageMobile: "assets/images/snapshoot-portfolio.png",
   },
   {
+    id:"6",
     name: "Multi-Post Stories Gain+Glory",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
@@ -147,13 +153,13 @@ function createWorksSection() {
       listItems.push(`<li class="lang">${technologies[x]}</li>`)
     }
     var workTemplate = document.createElement("template");
-    workTemplate.innerHTML = `<article class="card">
+    workTemplate.innerHTML = `<article class="card" data=${project.id}>
     <div class="project-sample">
       <h4 class="project-title">${project.name}</h4>
       <ul class="project-lang-list">
       ${createTechList(technologies)}
       </ul>
-       <a href="/popup.html" class="button open-modal"> See Projects </a>
+       <a class="button open-modal"> See Projects </a>
      </div>
    </article>`;
     getElement(".recent-works").appendChild(workTemplate.content.firstChild);

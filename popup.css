@@ -1,4 +1,4 @@
-.popup {
+.popup-wrapper {
   display: none;
   position: fixed;
   z-index: 1;
@@ -9,8 +9,16 @@
   overflow: scroll;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
   padding: 16px;
+}
+.popup {
+  background-color: white;
+  margin: 4% auto;
+  padding: 20px;
+  width: 70% ;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .project-title-popup {
   font-size: 32px;
