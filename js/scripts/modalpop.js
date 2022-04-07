@@ -1,120 +1,117 @@
-var isModalShown = false;
-let openModalButton = document.querySelectorAll(".open-modal");
-let modalPop = document.querySelector(".popup-wrapper");
-let cancelIcon = document.querySelector(".cancel-icon");
+const openModalButton = document.querySelectorAll('.open-modal');
+const modalPop = document.querySelector('.popup-wrapper');
 
-var projects = [
+const projects = [
   {
-    id: "1",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '1',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
   {
-    id: "2",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '2',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
   {
-    id: "3",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '3',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
   {
-    id: "4",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '4',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
   {
-    id: "5",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '5',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
   {
-    id: "6",
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "css", "Javascript", "html"],
+    id: '6',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
     desktopPopupTech: [
-      "Codekit",
-      "Github",
-      "Javascript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    mobilePopupTech: ["Ruby on rails", "css", "javascript"],
-    title: "Keeping track of hundreds of components",
-    popUpImageDesktop: "assets/images/snapshot-desktop.png",
-    popUpImageMobile: "assets/images/snapshoot-portfolio.png",
+    mobilePopupTech: ['Ruby on rails', 'css', 'javascript'],
+    title: 'Keeping track of hundreds of components',
+    popUpImageDesktop: 'assets/images/snapshot-desktop.png',
+    popUpImageMobile: 'assets/images/snapshoot-portfolio.png',
   },
 ];
 
-
 function createTechList(technologies, className) {
-  let langList = document.createElement("ul");
-  langList.classList.add("project-lang-list");
-  for (var i = 0; i < technologies.length; i++) {
-    let element = document.createElement("li");
-    element.classList.add(className[0])
+  const langList = document.createElement('ul');
+  langList.classList.add('project-lang-list');
+  for (let i = 0; i < technologies.length; i += 1) {
+    const element = document.createElement('li');
+    element.classList.add(className[0]);
     element.classList.add(className[1]);
     element.innerHTML = technologies[i];
     langList.appendChild(element);
@@ -122,11 +119,10 @@ function createTechList(technologies, className) {
   return langList.innerHTML;
 }
 function openModal(e) {
-  modalPop.style.display = "block";
-  isModalShown = true;
-  const projectId = e.target.getAttribute("data");
+  modalPop.style.display = 'block';
+  const projectId = e.target.getAttribute('data');
   const project = projects.find((e) => e.id === projectId);
-  let temp = document.createElement("template");
+  const temp = document.createElement('template');
 
   temp.innerHTML = `<section class="modal-content">
   <div class="cancel-with-image">
@@ -148,9 +144,9 @@ function openModal(e) {
 </div>
   </article>
 <ul class="project-lang-list">
-${createTechList(project.mobilePopupTech, ["mob-list-item", "lang"])}
+${createTechList(project.mobilePopupTech, ['mob-list-item', 'lang'])}
 <!-- Desktop items -->
-${createTechList(project.desktopPopupTech, ["desktop-list-item", "lang"])}
+${createTechList(project.desktopPopupTech, ['desktop-list-item', 'lang'])}
 
 </ul>
 <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
@@ -163,20 +159,18 @@ ${createTechList(project.desktopPopupTech, ["desktop-list-item", "lang"])}
     <p>See Source</p>
     <img src="assets/images/github.png" alt="">
   </div></section>`;
-  modalPop.innerHTML = temp.innerHTML
+  modalPop.innerHTML = temp.innerHTML;
 }
 function closeModal() {
-  modalPop.style.display = "none";
-  isModalShown = false;
+  modalPop.style.display = 'none';
 }
 
+openModalButton.forEach((e) => e.addEventListener('click', openModal));
 
-openModalButton.forEach((e) => e.addEventListener("click", openModal));
-
-modalPop.addEventListener("click", function (e) {
+modalPop.addEventListener('click', (e) => {
   if (
-    e.target.classList.contains("popup-wrapper") ||
-    e.target.classList.contains("cancel-icon")
+    e.target.classList.contains('popup-wrapper')
+    || e.target.classList.contains('cancel-icon')
   ) {
     closeModal();
   }
