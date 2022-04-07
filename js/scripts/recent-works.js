@@ -156,13 +156,13 @@ function createWorksSection() {
       listItems.push(`<li class="lang">${technologies[x]}</li>`)
     }
     var workTemplate = document.createElement("template");
-    workTemplate.innerHTML = `<article class="card" data=${project.id}>
+    workTemplate.innerHTML = `<article class="card">
     <div class="project-sample">
       <h4 class="project-title">${project.name}</h4>
       <ul class="project-lang-list">
       ${createTechList(technologies)}
       </ul>
-       <a class="button open-modal"> See Projects </a>
+       <a class="button open-modal" data=${project.id}> See Projects </a>
      </div>
    </article>`;
     getElement(".recent-works").appendChild(workTemplate.content.firstChild);
