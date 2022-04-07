@@ -154,4 +154,7 @@ ul {
     line-height: 30px;
     margin: 12px 0;
   }
+  .cancel-with-image {
+    all: unset;
+  }
 }

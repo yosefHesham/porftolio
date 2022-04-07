@@ -10,7 +10,7 @@ let isNavVisible = false;
 var projects = [
   {
     id:"1",
-    name: "Multi-Post Stories Gain+Glory",
+    name: "Multi-Post Stories Gain+Glory I Love you !",
     technologies: ["Ruby on rails", "css", "Javascript" ,"html"],
     desktopPopupTech: [
       "Codekit",
@@ -148,13 +148,9 @@ return langList.innerHTML
 }
 
 function createWorksSection() {
-  for (var i = 0; i < window.projects.length; i++) {
+  for (var i = 0; i < projects.length; i++) {
     var project = projects[i];
     const technologies = project.technologies;
-    var listItems = [];
-    for(var x = 0; x < technologies.length;  x++) {
-      listItems.push(`<li class="lang">${technologies[x]}</li>`)
-    }
     var workTemplate = document.createElement("template");
     workTemplate.innerHTML = `<article class="card">
     <div class="project-sample">
