@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('.close-button');
 const navItems = document.querySelectorAll('.nav-item');
 let isNavVisible = false;
 
-var projects = [
+const projects = [
   {
     id: '1',
     name: 'Multi-Post Stories Gain+Glory I Love you !',
