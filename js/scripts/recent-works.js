@@ -4,6 +4,7 @@ const hamburger = document.querySelector('#mob-menu');
 const navBar = document.querySelector('.mob-nav-list');
 const closeBtn = document.querySelector('.close-button');
 const navItems = document.querySelectorAll('.nav-item');
+
 let isNavVisible = false;
 
 function onClick() {
@@ -48,13 +49,13 @@ function createWorksSection() {
     const workTemplate = document.createElement('template');
     workTemplate.innerHTML = `<article class="card">
     <div class="project-sample">
-      <h4 class="project-title">${project.name}</h4>
+    <h4 class="project-title">${project.name}</h4>
       <ul class="project-lang-list">
       ${createTechList(technologies)}
       </ul>
        <a class="button open-modal" data=${project.id}> See Projects </a>
-     </div>
-   </article>`;
+       </div>
+       </article>`;
     getElement('.recent-works').appendChild(workTemplate.content.firstChild);
   }
 }
