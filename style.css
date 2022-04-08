@@ -344,6 +344,14 @@ footer {
   display: none;
 }
 
+.error-message {
+background-color: red;
+color: #fff;
+font-size: 20px;
+padding: 5px;
+margin: 2px;
+}
+
 /* Styling desktop >= 768px version starts here */
 @media only screen and (min-width: 768px) {
   .mobile-version {
