@@ -4,32 +4,36 @@
 
 > This is a portfolio to show my professional skills as developer
 
+![Screenshot-of-Portfolio](./assets/images/Full%20Page.png)
 
 ## Built With
 
 - Html, css and JavaScript
 
 ## Live Demo
+
 --
 
 [yousefHesham/Portfolio](https://yosefhesham.github.io/porftolio/)
 
-
 ### Setup
+
 - clone the project via https://github.com/yosefHesham/porftolio
 - thats it, you are good to go
 
 ## Authors
 
 👤 **Yousef Hesham**
+
 - GitHub: [@yousefHesham](https://github.com/yosefHesham)
 
 👤 **Anthony Mwenyo**
+
 - GitHub: [@mwenyoa](https://github.com/mweenyoa)
 
 👤 **Joseph Kwesi Kwentsir**
-- GitHub: [@kwentsir](https://github.com/kwentsir)
 
+- GitHub: [@kwentsir](https://github.com/kwentsir)
 
 ## 🤝 Contributing
 
