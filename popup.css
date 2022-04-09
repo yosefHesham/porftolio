@@ -81,9 +81,8 @@ ul {
 .popup-button {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 12px;
   background: #36b37f;
   border-radius: 4px;
 }
@@ -162,6 +161,8 @@ ul {
 
   .popup-button {
     border-radius: 8px;
+    justify-content: space-evenly !important;
+    padding: 0 12px;
     column-gap: 12px;
   }
 
