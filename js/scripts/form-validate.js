@@ -18,14 +18,14 @@ let formData = {
   email: '',
   message: '',
 };
-const  fetchLocalData = () => {
+const fetchLocalData = () => {
   if (localStorage.getItem('formData') !== null) {
     formData = JSON.parse(localStorage.getItem('formData'));
   }
   form.elements.name.value = formData.name;
   form.elements.email.value = formData.email;
   form.elements.message.value = formData.message;
-}
+};
 fetchLocalData();
 form.addEventListener('input', () => {
   formData.name = form.elements.name.value;
