@@ -18,7 +18,7 @@ let formData = {
   email: '',
   message: '',
 };
-function fetchLocalData() {
+const  fetchLocalData = () => {
   if (localStorage.getItem('formData') !== null) {
     formData = JSON.parse(localStorage.getItem('formData'));
   }
